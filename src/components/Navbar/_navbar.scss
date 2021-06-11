@@ -1,0 +1,125 @@
+.navbar {
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+
+  &-container {
+    z-index: 3;
+    position: relative;
+    max-width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    @media screen and(max-width:1200px) {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+    @media screen and (max-width: 768px) {
+      height: 105px;
+    }
+    .navbar-brand {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 2;
+      .navbar-logo {
+        width: 100px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        margin-bottom: 3px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      span {
+        margin-left: 12px;
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: $very-dark-blue;
+      }
+    }
+    .nav-list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media screen and (max-width: 768px) {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) translateY(-150%);
+        flex-direction: column;
+        align-items: initial;
+        width: 90%;
+        top: 0;
+        text-align: center;
+        padding: 0px 5% 30px;
+        opacity: 0;
+        transition: all 0.25s ease-out;
+        height: 80vh;
+        background-color: $very-soft-blue;
+        justify-content: flex-start;
+        padding-top: 105px;
+        z-index: 1;
+        &.active {
+          transform: translateX(-50%) translateY(0%);
+          opacity: 1;
+        }
+      }
+
+      .nav-link {
+        padding: 20px;
+        color: $white;
+        @media screen and(max-width:768px) {
+          color: $white;
+          border-top: 1px solid $grayish-blue;
+        }
+        &:hover {
+          color: $soft-green;
+        }
+        &:nth-child(5) {
+          margin-right: 15px;
+        }
+      }
+      .navbar-btn {
+        @include btn-primary;
+        @include btn-small;
+        @media screen and (max-width: 768px) {
+          margin-top: 20px;
+          &:hover {
+            background: $white;
+          }
+        }
+      }
+      .social-links {
+        position: absolute;
+        display: none;
+        text-align: center;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        .social-link {
+          margin: 0 20px;
+          border-top: none;
+        }
+        @media screen and (max-width: 768px) {
+          display: block;
+        }
+      }
+    }
+    .burger-menu {
+      display: none;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      z-index: 2;
+      @media screen and (max-width: 768px) {
+        display: block;
+      }
+    }
+  }
+}

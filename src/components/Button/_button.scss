@@ -1,0 +1,67 @@
+.btn {
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  box-shadow: 0px 10px 20px 1px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-family: "Rubik", sans-serif;
+}
+
+@mixin btn-primary {
+  background-color: $soft-green;
+  color: $soft-purple;
+  border: 2px solid $soft-green;
+  &:hover {
+    background-color: $hover-green;
+  }
+}
+
+@mixin btn-secondary {
+  background-color: $purple;
+  color: $white;
+  border: 2px solid $purple;
+  &:hover {
+    background-color: transparent;
+    color: $purple;
+  }
+}
+
+@mixin btn-tertiary {
+  background-color: transparent;
+  color: $soft-green;
+  border: 2px solid $soft-green;
+  &:hover {
+    background-color: $soft-green;
+    color: $soft-purple;
+    border: 2px solid $soft-green;
+  }
+}
+
+@mixin btn-small {
+  width: max-content;
+  height: 40px;
+  padding: 0 10px;
+  @media screen and (max-width: 768px) {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@mixin btn-medium {
+  width: 160px;
+  height: 45px;
+  @media screen and (max-width: 768px) {
+    width: 150px;
+  }
+}
+
+@mixin btn-large {
+  width: 230px;
+  height: 45px;
+  @media screen and (max-width: 768px) {
+    width: 150px;
+  }
+}

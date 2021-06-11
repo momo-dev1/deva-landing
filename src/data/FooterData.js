@@ -1,0 +1,37 @@
+export const FooterData = [
+  {
+    title: "Homepages",
+    link: "Home Finance",
+    link2: "Home Support",
+    link3: "Home SEO",
+    link4: "Home Bot",
+    link5: "Home Mobile App",
+  },
+  {
+    title: "Services",
+    link1: "Industries",
+    link2: "Services",
+    link3: "Financing",
+    link4: "Partners",
+    link5: "Finance Tools",
+    link6: "Service Details",
+  },
+  {
+    title: "Company",
+    link1: "Solutions",
+    link2: "Clients",
+    link3: "Feedback",
+    link4: "StreamKit",
+    link5: "Certificates",
+    link6: "Why Choose Us",
+  },
+  {
+    title: "Resources",
+    link1: "Press",
+    link2: "Privacy",
+    link3: "Licenses",
+    link4: "Guidelines",
+    link5: "Useful Tips",
+    link6: "Our team",
+  },
+];
