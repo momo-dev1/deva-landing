@@ -1,6 +1,6 @@
 # Deva Landing Page
 
-**<a href="https://bookmarks-react.netlify.app/">View Demo</a>**
+**<a href="https://deva-landing.netlify.app/">View Demo</a>**
 
 #### Packages I use.
 - node-sass
