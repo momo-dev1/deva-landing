@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { AiFillFacebook, AiOutlineTwitter } from "react-icons/ai";
 import { IoMdClose } from "react-icons/io";
 import Logo from "../../assets/images/logo.png";
 import { motion } from "framer-motion";
