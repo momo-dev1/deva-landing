@@ -1,6 +1,6 @@
 export const FooterData = [
   {
-    title: "Homepages",
+    title: "Home",
     link: "Home Finance",
     link2: "Home Support",
     link3: "Home SEO",
