@@ -65,6 +65,7 @@
       @media screen and (max-width: 768px) {
         width: 60px;
       }
+
       transition: all 500ms ease-in-out;
       &:hover {
         opacity: 1;
@@ -90,6 +91,9 @@
           max-width: 580px;
           border-radius: 20px;
           z-index: 2;
+          @media screen and (max-width: 480px) {
+            width: 300px;
+          }
         }
         .features-btn {
           position: absolute;
