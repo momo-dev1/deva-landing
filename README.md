@@ -9,7 +9,7 @@
 
   Deva landing is a fully responsive Landing page, <br />Responsive for all devices, built using HTML, CSS, and JavaScript.
 
-  <a  href="https://momo-dev1.github.io/deva-landing/"><strong>➥ Live Demo</strong></a>
+  <a  href="https://deva-landing.netlify.app/"><strong>➥ Live Demo</strong></a>
 
 </div>
 
